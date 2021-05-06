@@ -54,5 +54,25 @@ namespace ProjectFishing.Controllers
             var model = new Fish();
             return View(model);
         }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult AddShop(Shops model)
+        {
+            using (_db = new Context())
+            {
+                if (ModelState.IsValid)
+                {
+                    _db.Shops.Add(model);
+                    _db.SaveChanges();
+                }
+            }
+            return RedirectToAction("Index", "Home");
+        }
+        public ActionResult AddShop()
+        {
+            var model = new Shops();
+            return View(model);
+        }
     }
 }

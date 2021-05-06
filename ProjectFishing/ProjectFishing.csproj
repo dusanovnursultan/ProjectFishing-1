@@ -252,6 +252,7 @@
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Home\AddLakes.cshtml" />
     <Content Include="Views\Home\AddFish.cshtml" />
+    <Content Include="Views\Home\AddShop.cshtml" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
