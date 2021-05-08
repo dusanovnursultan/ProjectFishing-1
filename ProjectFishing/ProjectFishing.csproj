@@ -170,6 +170,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\FishesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Global.asax.cs">
@@ -383,6 +384,7 @@
     <Content Include="Views\Home\AddLakes.cshtml" />
     <Content Include="Views\Home\AddFish.cshtml" />
     <Content Include="Views\Home\AddShop.cshtml" />
+    <Content Include="Views\Fishes\ShowFishes.cshtml" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>

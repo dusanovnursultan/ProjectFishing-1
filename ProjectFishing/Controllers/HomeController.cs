@@ -15,6 +15,10 @@ namespace ProjectFishing.Controllers
         {
             return View();
         }
+        public ActionResult ShowFishes()
+        {
+            return View();
+        }
 
         [HttpPost]
         [ValidateAntiForgeryToken]
@@ -74,5 +78,7 @@ namespace ProjectFishing.Controllers
             var model = new Shops();
             return View(model);
         }
+
+        
     }
 }

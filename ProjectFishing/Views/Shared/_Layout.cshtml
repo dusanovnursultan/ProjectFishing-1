@@ -32,13 +32,9 @@
     <link rel="stylesheet" type="text/css" href="Content/style.css">
     <link rel="stylesheet" type="text/css" href="Content/shortcodes.css">
 
-    <!--[if lt IE 9]>
-        <script src="js/html5/respond.min.js"></script>
-    <![endif]-->
-
 </head>
 <body data-offset="200" data-spy="scroll" data-target=".ow-navigation">
-   <header class="header-main container-fluid no-padding">
+    <header class="header-main container-fluid no-padding">
         <!-- Top Header  -->
         <div class="top-header container-fluid no-padding">
             <!-- Container -->
@@ -80,20 +76,20 @@
                     </div>
                     <div id="navbar" class="navbar-collapse collapse">
                         <ul class="nav navbar-nav">
-                            <li class="active"><a href="index.html" title="Home">Home</a></li>
-                            <li><a href="2-about.html" title="About Us">About Us</a></li>
-                            <li><a href="3-services.html" title="Services">Services</a></li>
+                            <li class="active"><a href="index.html" title="Home">Главная</a></li>
+                            <li><a href="2-about.html" title="Lakes">Озера</a></li>
+                            <li><a href="/Fishes/ShowFishes" title="Fishies">Рыба</a></li>
+                            <li><a href="#" title="Partners">Партнёры</a></li>
                             <li class="dropdown">
-                                <a href="#" title="Pages" class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">Pages</a>
+                                <a href="#" title="Pages" class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">Ещё</a>
                                 <i class="ddl-switch fa fa-angle-down"></i>
                                 <ul class="dropdown-menu">
-                                    <li><a href="4-gallery.html" title="Gallery">Gallery</a></li>
-                                    <li><a href="6-pricing.html" title="Pricing">Pricing</a></li>
+                                    <li><a href="4-gallery.html" title="Flea market">Барахолка</a></li>
+                                    <li><a href="6-pricing.html" title="Forum">Форум</a></li>
                                     <li><a href="7-faq.html" title="Faq">FAQ</a></li>
                                     <li><a href="10-404.html" title="404">404</a></li>
                                 </ul>
                             </li>
-                            <li><a href="#" title="Our Team">Shop</a></li>
                             <li class="dropdown">
                                 <a href="8-blog.html" title="Latest News" class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">Latest News</a>
                                 <i class="ddl-switch fa fa-angle-down"></i>
@@ -102,14 +98,14 @@
                                     <li><a href="9-blog-post.html" title="Single Post">Single</a></li>
                                 </ul>
                             </li>
-                            <li><a href="11-contact-us.html" title="Contact Us">Contact Us</a></li>
+                            <li><a href="11-contact-us.html" title="Contact Us">О нас</a></li>
                         </ul>
                     </div>
                 </nav><!-- Navigation -->
             </div><!-- Container /- -->
         </div><!-- Menu Block /- -->
     </header><!-- Header /- -->
-   
+
     <div>
         @RenderBody()
         <hr />
@@ -117,7 +113,7 @@
             <p>&copy; @DateTime.Now.Year - мое приложение ASP.NET</p>
         </footer>
     </div>
-
+   
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("scripts", required: false)
